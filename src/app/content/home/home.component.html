@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="text-input">
+    <input
+      type="number"
+      id="input1"
+      placeholder="ENTER ID"
+      [(ngModel)]="dataId"
+    />
+    <label for="input1" style="cursor: pointer" (click)="navigate()"
+      ><div style="padding: 14px; font-weight: 800">SEND</div></label
+    >
+  </div>
+
+  <h3 style="color: white" *ngIf="showError">
+    DATA NOT FOUND OR MISSING BODY/TITLE
+  </h3>
+</div>

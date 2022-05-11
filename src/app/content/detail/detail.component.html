@@ -1,0 +1,12 @@
+<div class="bck-btn" (click)="back()">
+  <span>HOME</span>
+</div>
+
+<div class="card" [formGroup]="dataFG">
+  <div class="card-title">
+    <h3>{{ title.value }}</h3>
+  </div>
+  <div class="card-body">
+    <textarea formControlName="body" class="tarea"></textarea>
+  </div>
+</div>
